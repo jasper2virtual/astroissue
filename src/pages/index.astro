@@ -1,7 +1,12 @@
 ---
-
+import Hello from './_hello.vue'
+import Morning from './_morning.vue'
 ---
-
+<style>
+	.hello-astro {
+		color:cyan;
+	}
+</style>
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
@@ -11,6 +16,8 @@
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<p class="hello-astro">hello astro</p>
+		<Hello client:only="vue"/>
+	<Morning clinet:only="vue"/>
 	</body>
 </html>
