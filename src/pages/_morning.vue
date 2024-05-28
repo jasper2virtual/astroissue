@@ -1,9 +1,12 @@
 <script setup lang="ts">
-
+function testme(e){
+  console.log('testme');
+}
 </script>
 
 <template>
-  <p class="morning-vue">Morning vue</p>
+
+  <button @click.exact="testme">test</button>
 </template>
 
 <style scoped>

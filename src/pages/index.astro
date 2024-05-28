@@ -14,10 +14,13 @@ import Morning from './_morning.vue'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
+		<link rel="stylesheet" href="/hello-assets/styles.css" />
+
 	</head>
 	<body>
 		<p class="hello-astro">hello astro</p>
 		<Hello client:only="vue"/>
-	<Morning clinet:only="vue"/>
+	<Morning client:only="vue"/>
+
 	</body>
 </html>
